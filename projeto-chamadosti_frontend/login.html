@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Login</title>
+</head>
+
+<body>
+  <section class="modal">
+    <form id="loginForm">
+      <h2 class="title">Login</h2>
+      <label for="matricula">Matrícula</label>
+      <input class="wrapper" type="text" id="matricula" name="matricula" placeholder="Digite sua matrícula" required>
+      <label for="password">Senha</label>
+      <input class="wrapper" type="password" id="password" name="password" placeholder="Digite sua senha" required>
+      <button type="submit">Entrar</button>
+    </form>
+  </section>
+
+  <script>document
+      .getElementById('loginForm')
+      .addEventListener('submit', function (event) {
+        event.preventDefault();
+        window.location.href = './form.html';
+      });</script>
+
+
+</body>
+
+</html>
